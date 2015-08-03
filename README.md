@@ -12,9 +12,11 @@ Helloworld node application
 ## The pipeline 
 As simple as it gets
 - Deploy 
-+ • Deploys the HelloWorld Node.js app to Bluemix and exports the app name for use in the testing stage. 
++ Deploys the HelloWorld Node.js app to Bluemix and exports the app name for use in the testing stage. 
 - Tests 
-+ • Runs a suite of tests via Sauce Labs against the deployed app. All the needed environment variables have been set.
++ Runs a suite of tests via Sauce Labs against the deployed app. All the needed environment variables have been set.
+
+NOTE: The deploying to Bluemix Stage will not complete since the Sauce Labs credentials are invalid. Once the Configuring Pipeline stage has completed, it is safe to view the project and enter valid Sauce Labs information.
 
 ##Overview of Sauce extensions
 ### Simple extension to allow exection of Sauce Labs tests via the pipeline. Support for Java and Javascript testing.
