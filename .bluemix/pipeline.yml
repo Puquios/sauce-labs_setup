@@ -29,12 +29,12 @@ stages:
       application: HelloNodeApp
     script: |
 #!/bin/bash
-      	cf push "${CF_APP}"
+cf push "${CF_APP}"
 
-      	export CF_APP_NAME="$CF_APP"
+export CF_APP_NAME="$CF_APP"
 
-      	# view logs
-      	#cf logs "${CF_APP}" --recent"
+# view logs
+#cf logs "${CF_APP}" --recent"
   - name: Sauce Labs Tests
     type: tester
     extension_id: ibm.devops.services.pipeline.saucelabs
