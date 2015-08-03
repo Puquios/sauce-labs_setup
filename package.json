@@ -1,16 +1,9 @@
 {
-  "name": "HelloNodeApp-elobeto",
+  "name": "HelloNodeApp",
   "description": "The best project ever.",
   "version": "0.1.0",
   "homepage": "https://github.com/elobeto/bluemix-hello-node",
   "author": {},
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/elobeto/bluemix-hello-node.git"
-  },
-  "bugs": {
-    "url": "https://github.com/elobeto/bluemix-hello-node/issues"
-  },
   "licenses": [
     {
       "type": "MIT",
