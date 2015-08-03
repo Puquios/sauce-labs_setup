@@ -27,8 +27,7 @@ stages:
       organization: ${CF_ORGANIZATION}
       space: ${CF_SPACE}
       application: HelloNodeApp
-    script: |
-      #!/bin/bash
+    script: #!/bin/bash
       cf push \"${CF_APP}\"
 
       export CF_APP_NAME=\"$CF_APP\"
@@ -45,6 +44,5 @@ stages:
     ACCESS: Your Access Key Here
     SELECT_CMD: npm test
     USER_ID: Your Username Here
-    COMMAND: |
-      #!/bin/bash
+    COMMAND: "#!/bin/bash"
 
