@@ -1,0 +1,5 @@
+---
+applications:
+- name:    hello-node-Evans-Node
+  host:    hello-node-Evans-Node
+  memory:  128M
