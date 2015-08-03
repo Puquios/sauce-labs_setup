@@ -27,13 +27,13 @@ stages:
       organization: ${CF_ORGANIZATION}
       space: ${CF_SPACE}
       application: HelloNodeApp
-    script: #!/bin/bash
+    script: "#!/bin/bash
       cf push \"${CF_APP}\"
 
       export CF_APP_NAME=\"$CF_APP\"
 
       # view logs
-      #cf logs "\${CF_APP}\" --recent
+      #cf logs "\${CF_APP}\" --recent"
   - name: Sauce Labs Tests
     type: tester
     extension_id: ibm.devops.services.pipeline.saucelabs
