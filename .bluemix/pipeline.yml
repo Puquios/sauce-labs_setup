@@ -28,7 +28,7 @@ stages:
       space: ${CF_SPACE}
       application: HelloNodeApp
     script: |
-	#!/bin/bash
+#!/bin/bash
       	cf push "${CF_APP}"
 
       	export CF_APP_NAME="$CF_APP"
