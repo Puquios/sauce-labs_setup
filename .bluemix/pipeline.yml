@@ -14,10 +14,10 @@ stages:
     value: '80'
     type: text
   - name: CF_APP_NAME
-    value: ''
+    value: 'null'
     type: text
   - name: TEST_URL
-    value: ''
+    value: 'null'
     type: text
   jobs:
   - name: Deploy
