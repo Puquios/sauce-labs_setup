@@ -16,13 +16,13 @@ As simple as it gets
 - Tests 
 + Runs a suite of tests via Sauce Labs against the deployed app. All the needed environment variables have been set.
 
-NOTE: The deploying to Bluemix Stage will not complete since the Sauce Labs credentials are invalid. Once the Configuring Pipeline stage has completed, it is safe to view the project and enter valid Sauce Labs information.
+NOTE: The deploying to Bluemix Stage takes a while to complete.
 
-##Overview of Sauce extensions
-### Simple extension to allow exection of Sauce Labs tests via the pipeline. Support for Java and Javascript testing.
+##Overview of Sauce extension
+## Simple extension to allow exection of Sauce Labs tests via the pipeline. Support for Java and Javascript testing.
 
 
-### Usage:
+## Usage:
 Provide Sauce Labs User Name and Access Key in the text boxes provided and indicate whether Sauce Connect will need to be set up. This only applies if the project does not use the npm module `sauce-connect-launcher`.
 
 In order to automatically run tests against the URL generated in the build stage, ensure that tests are configured to pull a URL from environment variables(namely `TEST_URL`). Add two environment variables `CF_APP_NAME` with a blank value (delete any pre-filled data) and one with the key `TEST_URL` with no value as before. This will the be the URL of the deployed app that the tests will run against.
