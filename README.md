@@ -6,15 +6,15 @@ Press this button to get your own copy of the sample running in Bluemix!
 
 [![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://hub.jazz.net/deploy/index.html?repository=https://github.com/Puquios/sauce-labs_setup.git) 
 
-### The application 
+### The application: 
 Helloworld node application
 
-### The pipeline 
+### The pipeline: 
 As simple as it gets
-- Deploy 
-+ Deploys the HelloWorld Node.js app to Bluemix and exports the app name for use in the testing stage. 
-- Tests 
-+ Runs a suite of tests via Sauce Labs against the deployed app. All the needed environment variables have been set.
+* Deploy 
+    * Deploys the HelloWorld Node.js app to Bluemix and exports the app name for use in the testing stage. 
+* Tests 
+    * Runs a suite of tests via Sauce Labs against the deployed app. All the needed environment variables have been set.
 
 NOTE: The deploying to Bluemix Stage takes a while to complete.
 
