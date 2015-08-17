@@ -7,12 +7,6 @@ stages:
   triggers:
   - type: commit
   properties:
-  - name: HOST
-    value: ondemand.saucelabs.com
-    type: text
-  - name: PORT
-    value: '80'
-    type: text
   - name: CF_APP_NAME
     value: 'null'
     type: text
