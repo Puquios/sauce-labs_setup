@@ -3,7 +3,8 @@
 A simple pipeline with a HelloWorld Node.js application that runs tests via Sauce Labs. This is an easy way to get a pre-configured pipeline with all the environment variables set and ready to go!
 
 Press this button to get your own copy of the sample running in Bluemix!
- 
+
+[![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://hub.jazz.net/deploy/index.html?repository=https://github.com/Puquios/sauce-labs_setup.git) 
 
 ### The application: 
 Helloworld node application
