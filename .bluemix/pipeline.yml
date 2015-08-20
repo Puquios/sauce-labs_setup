@@ -32,11 +32,9 @@ stages:
       #cf logs "${CF_APP}" --recent
   - name: Sauce Labs Tests
     type: tester
-    extension_id: ibm.pipeline.rws_test_extension
-    target:
-      url: ${CF_TARGET_URL}
-      organization: ${CF_ORGANIZATION}
-      space: ${CF_SPACE}
-    SCRIPT: |
+    script: |-
       #!/bin/bash
+      # invoke tests here
       exit 0
+    enable_tests: true
+    test_file_pattern: '*.xml'
