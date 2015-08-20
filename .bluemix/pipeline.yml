@@ -37,10 +37,10 @@ stages:
       url: ${CF_TARGET_URL}
       organization: ${CF_ORGANIZATION}
       space: ${CF_SPACE}
-    ACCESS: access
+    ACCESS: a5a54062-2e5e-4c97-852a-59251e38760c
     DL_ASSETS: 'true'
     SELECT_CMD: npm test
-    USER_ID: username
+    USER_ID: elobeto
     COMMAND: '#!/bin/bash'
     enable_tests: true
     test_file_pattern: '*.xml'
