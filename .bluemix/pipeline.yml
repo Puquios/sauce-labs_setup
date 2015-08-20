@@ -30,4 +30,17 @@ stages:
 
       # view logs
       #cf logs "${CF_APP}" --recent
-
+  - name: Sauce Labs Tests
+    type: tester
+    extension_id: ibm.devops.services.pipeline.saucelabs
+    target:
+      url: ${CF_TARGET_URL}
+      organization: ${CF_ORGANIZATION}
+      space: ${CF_SPACE}
+    ACCESS: access
+    DL_ASSETS: 'true'
+    SELECT_CMD: npm test
+    USER_ID: username
+    COMMAND: '#!/bin/bash'
+    enable_tests: true
+    test_file_pattern: '*.xml'
