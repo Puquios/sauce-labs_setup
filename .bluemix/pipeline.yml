@@ -32,15 +32,12 @@ stages:
       #cf logs "${CF_APP}" --recent
   - name: Sauce Labs Tests
     type: tester
-    extension_id: ibm.devops.services.pipeline.saucelabs
+     extension_id: ibm.pipeline.rws_test_extension
     target:
       url: ${CF_TARGET_URL}
       organization: ${CF_ORGANIZATION}
       space: ${CF_SPACE}
-    ACCESS: a5a54062-2e5e-4c97-852a-59251e38760c
-    DL_ASSETS: 'true'
-    SELECT_CMD: npm test
-    USER_ID: elobeto
-    COMMAND: '#!/bin/bash'
-    enable_tests: true
-    test_file_pattern: '*.xml'
+    SCRIPT: |-
+      #!/bin/bash
+
+      exit 0
