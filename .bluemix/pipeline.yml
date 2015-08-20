@@ -44,4 +44,4 @@ stages:
     COMMAND: |
       #!/bin/bash
     enable_tests: 'true'
-    test_file_pattern: *.xml
+    test_file_pattern: '*.xml'
