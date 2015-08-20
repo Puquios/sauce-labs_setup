@@ -37,7 +37,6 @@ stages:
       url: ${CF_TARGET_URL}
       organization: ${CF_ORGANIZATION}
       space: ${CF_SPACE}
-    SCRIPT: |-
+    SCRIPT: |
       #!/bin/bash
-
       exit 0
