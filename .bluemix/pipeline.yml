@@ -30,16 +30,11 @@ stages:
 
       # view logs
       #cf logs "${CF_APP}" --recent
-- name: MyStageDOS
-  inputs:
-  - type: git
-    branch: master
-  triggers:
-  - type: stage
-  jobs:
-  - name: Test
+  - name: Sauce Labs Tests
     type: tester
     script: |-
       #!/bin/bash
       # invoke tests here
       exit 0
+    enable_tests: true
+    test_file_pattern: '*.xml'
