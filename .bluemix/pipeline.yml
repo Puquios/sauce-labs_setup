@@ -43,5 +43,5 @@ stages:
     USER_ID: username
     COMMAND: |
       #!/bin/bash
-    enable_tests: 'true'
+    enable_tests: true
     test_file_pattern: '*.xml'
