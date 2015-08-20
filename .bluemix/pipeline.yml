@@ -4,8 +4,6 @@ stages:
   inputs:
   - type: git
     branch: master
-  triggers:
-  - type: commit
   properties:
   - name: CF_APP_NAME
     value: 'null'
