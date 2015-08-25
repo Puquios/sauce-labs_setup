@@ -4,7 +4,7 @@ A simple pipeline with a HelloWorld Node.js application that runs tests via Sauc
 
 Press this button to get your own copy of the sample running in Bluemix!
 
-Disabled for debugging.
+[![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://hub.jazz.net/deploy/index.html?repository=https://github.com/Puquios/sauce-labs_setup.git)
 
 ### The application: 
 Helloworld node application

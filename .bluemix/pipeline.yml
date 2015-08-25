@@ -32,6 +32,7 @@ stages:
       #cf logs "${CF_APP}" --recent
   - name: Sauce Labs Tests
     extension_id: ibm.devops.services.pipeline.saucelabs
+    type: tester
     target:
       url: ${CF_TARGET_URL}
       organization: ${CF_ORGANIZATION}
