@@ -18,6 +18,7 @@ As simple as it gets:
 
 ## Simple set up instructions:
 In order to configure a new stage with Sauce Labs follow these steps:
+
 1.	Click the "Add Stage" button in the Pipeline
 2. 	Name the new stage accordingly and click on the "Jobs" tab
 3.	Click the "Add Job" button and select "Deploy"
