@@ -2,9 +2,9 @@
 
 A simple pipeline with a HelloWorld Node.js application that runs tests via Sauce Labs. This is an easy way to get a pre-configured pipeline with all the environment variables set and ready to go! The Sauce Labs username and API key fields will need to be filled in with valid information before the stage will run correctly.
 
-Press this button to get your own copy of the sample running in Bluemix!
+Click the link below to see a project running in Bluemix!
 
-Disabled.
+[View a configured Sauce Labs project here.](https://hub.jazz.net/project/elobeto/Sauce-testStageSetsURL/overview
 
 ### The application: 
 Helloworld node application
