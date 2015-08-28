@@ -18,22 +18,22 @@ As simple as it gets:
 
 ## Simple set up instructions:
 In order to configure a new stage with Sauce Labs follow these steps:
-1. Click the "Add Stage" button in the Pipeline
-2. Name the new stage accordingly and click on the "Jobs" tab
-3. Click the "Add Job" button and select "Deploy"
-4. Name the Deploy job accordingly and set up desired deploy configuration
-5. In the deploy script box add the following code:
+1.	Click the "Add Stage" button in the Pipeline
+2. 	Name the new stage accordingly and click on the "Jobs" tab
+3.	Click the "Add Job" button and select "Deploy"
+4.	Name the Deploy job accordingly and set up desired deploy configuration
+5.	In the deploy script box add the following code:
 	export CF_APP_NAME="$CF_APP"
-6. Click the "Add Job" button again and select "Test"
-7. Name the new Test Job accordingly and select "Sauce Labs" from the Tester Type dropdown
-8. Enter your Sauce Labs username and access key in the provided input fields
-9. Select the execution command that best fits your code configuration or enter a custom command
-10. Select whether to download the videos and Selenium logs for the Sauce Labs jobs
-11. Select whether or not to enable test reporting. For best results, use the `mocha-jenkins-reporter` in JavaScript
-12. CLick on the "Environment Properties" tab at the top, hit "Add Property" and select "Text Property"
-13. Add the property `CF_APP_NAME` and delete the prefilled value
-14. Do the same for `TEST_URL`.
-15. Hit the "Save" button and the stage is complete!
+6.	Click the "Add Job" button again and select "Test"
+7.	Name the new Test Job accordingly and select "Sauce Labs" from the Tester Type dropdown
+8.	Enter your Sauce Labs username and access key in the provided input fields
+9.	Select the execution command that best fits your code configuration or enter a custom command
+10.	Select whether to download the videos and Selenium logs for the Sauce Labs jobs
+11.	Select whether or not to enable test reporting. For best results, use the `mocha-jenkins-reporter` in JavaScript
+12.	Click on the "Environment Properties" tab at the top, hit "Add Property" and select "Text Property"
+13.	Add the property `CF_APP_NAME` and delete the prefilled value
+14.	Do the same for `TEST_URL`.
+15.	Hit the "Save" button and the stage is complete!
 
 ## Usage:
 Overview of the Sauce Labs extension:
