@@ -22,8 +22,7 @@ In order to configure a new stage with Sauce Labs follow these steps:
 2. 	Name the new stage accordingly and click on the "Jobs" tab
 3.	Click the "Add Job" button and select "Deploy"
 4.	Name the Deploy job accordingly and set up desired deploy configuration
-5.	In the deploy script box add the following code:
-	export CF_APP_NAME="$CF_APP"
+5.	In the deploy script box add the following code: `export CF_APP_NAME="$CF_APP"`
 6.	Click the "Add Job" button again and select "Test"
 7.	Name the new Test Job accordingly and select "Sauce Labs" from the Tester Type dropdown
 8.	Enter your Sauce Labs username and access key in the provided input fields
