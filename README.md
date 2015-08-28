@@ -4,7 +4,7 @@ A simple pipeline with a HelloWorld Node.js application that runs tests via Sauc
 
 Click the link below to see a project running in Bluemix!
 
-[View a configured Sauce Labs project here.](https://hub.jazz.net/project/elobeto/Sauce-testStageSetsURL/overview
+[View a configured Sauce Labs project here.](https://hub.jazz.net/project/elobeto/Sauce-testStageSetsURL/overview)
 
 ### The application: 
 Helloworld node application
