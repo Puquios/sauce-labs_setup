@@ -50,5 +50,6 @@ As simple as it gets:
 15. Ensure that the following code is included in the deploy stage script box: `export CF_APP_NAME="$CF_APP"`
 15.	Hit the "Save" button and the stage is complete!
 
+###References:
 
 See [Sauce Labs extension](https://github.com/Osthanes/saucelabs) for the extension.
