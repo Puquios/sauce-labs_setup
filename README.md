@@ -16,8 +16,9 @@ As simple as it gets:
 * Tests 
     * Runs a suite of tests via Sauce Labs against the deployed app. All the needed environment variables have been set.
 
-## Simple set up instructions:
-In order to configure a <strong>new stage</strong> with Sauce Labs follow these steps:
+# Simple set up instructions:
+
+##Creating a new stage with Sauce Labs:
 
 1.	Click the "Add Stage" button in the Pipeline
 2. 	Name the new stage accordingly and click on the "Jobs" tab
@@ -35,7 +36,7 @@ In order to configure a <strong>new stage</strong> with Sauce Labs follow these 
 14.	Do the same for `APP_URL`.
 15.	Hit the "Save" button and the stage is complete!
 
-In order to add a <strong>new Sauce Labs test job to an existing stage</strong> follow these steps:
+##Adding Sauce Labs to an existing stage:
 
 6.	Click the "Add Job" button inside the desired stage and select "Test"
 7.	Name the new Test Job accordingly and select "Sauce Labs" from the Tester Type dropdown
@@ -50,16 +51,16 @@ In order to add a <strong>new Sauce Labs test job to an existing stage</strong> 
 15.	Hit the "Save" button and the stage is complete!
 
 
-## Usage:
+# Usage:
 Overview of the Sauce Labs extension:
 
 Provide Sauce Labs User Name and Access Key in the text boxes provided.
 
 The follwing environment variables will need to be added:
 * `CF_APP_NAME`: The name of the app that will be pulled from the deploy job. Leave empty.
-* `TEST_URL`: The URL of the deployed app that will be set from Cloud Foundry. Ensure the test code is configured to read in this value for the URL and are not hardcoded. Leave empty.
+* `APP_URL`: The URL of the deployed app that will be set from Cloud Foundry. Ensure the test code is configured to read in this value for the URL and are not hardcoded. Leave empty.
 
-In order to automatically run tests against the URL generated in the deploy stage, ensure that tests are configured to pull a URL from the environment variables (namely `TEST_URL`).
+In order to automatically run tests against the URL generated in the deploy stage, ensure that tests are configured to pull a URL from the environment variables (namely `APP_URL`).
 
 Add the following command into the deploy job to ensure that the app URL is transferred to the test job: `export CF_APP_NAME="$CF_APP"` <strong>NOTE:</strong> Environment variables can only be transferred within a single stage (ie, from job to job), not from stage to stage.
 
