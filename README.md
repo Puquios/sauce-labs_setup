@@ -20,7 +20,7 @@ Helloworld node application
 
 ##Pipeline with a Build stage -> Deploy stage - > Test stage:
 
-[View a configured Sauce Labs project here.](https://hub.jazz.net/project/elobeto/Sauce-testStageSetsURL/overview)
+[![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://hub.jazz.net/deploy/index.html?repository=https://github.com/eLobeto/exampleSauceApp.git)
 
 
 ### The application: 
