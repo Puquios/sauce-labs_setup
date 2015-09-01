@@ -6,7 +6,7 @@ Click the links below to see a project running in Bluemix!
 
 ##Pipeline with a Build stage -> Deploy/Test stage:
 
-![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://hub.jazz.net/deploy/index.html?repository=https://github.com/Puquios/sauce-labs_setup.git)
+[![Deploy To Bluemix](https://bluemix.net/deploy/button.png)](https://hub.jazz.net/deploy/index.html?repository=https://github.com/Puquios/sauce-labs_setup.git)
 
 ### The application: 
 Helloworld node application
