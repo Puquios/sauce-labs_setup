@@ -62,8 +62,7 @@ Helloworld node application
 10.	Select whether to download the videos and Selenium logs for the Sauce Labs jobs
 11.	Select whether or not to enable test reporting. For best results, use the `mocha-jenkins-reporter` in JavaScript
 12.	Click on the "Environment Properties" tab at the top, hit "Add Property" and select "Text Property"
-13.	Add the property `CF_APP_NAME` and delete the prefilled value
-14.	Do the same for `APP_URL` but add in the URL for the application instead of leaving it blank
+14.	Add the property `APP_URL` with the URL for the application as the value.
 15.	Hit the "Save" button and the stage is complete!
 
 ###References:
