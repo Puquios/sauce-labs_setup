@@ -53,8 +53,6 @@ Helloworld node application
 
 ##Adding a Sauce Labs test job to its own, new stage:
 
-##Creating a new stage with Sauce Labs:
-
 1.	Click the "Add Stage" button in the Pipeline
 2. 	Name the new stage accordingly and click on the "Jobs" tab
 6.	Click the "Add Job" button again and select "Test"
