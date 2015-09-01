@@ -1,18 +1,27 @@
 ---
 stages:
-- name: Deploy and Test
+- name: Build
   inputs:
   - type: git
     branch: master
   triggers:
   - type: commit
-    enabled: false
+  jobs:
+  - name: Build
+    type: builder
+- name: Deploy and Test
+  inputs:
+  - type: job
+    stage: Build
+    job: Build
+  triggers:
+  - type: stage
   properties:
   - name: CF_APP_NAME
-    value: 'null'
+    value: 'undefined'
     type: text
-  - name: TEST_URL
-    value: 'null'
+  - name: APP_URL
+    value: 'undefined'
     type: text
   jobs:
   - name: Deploy
@@ -21,7 +30,7 @@ stages:
       url: ${CF_TARGET_URL}
       organization: ${CF_ORGANIZATION}
       space: ${CF_SPACE}
-      application: HelloNodeApp
+      application: Sauce-testStageSetsURL
     script: |
       #!/bin/bash
       cf push "${CF_APP}"
@@ -30,17 +39,15 @@ stages:
 
       # view logs
       #cf logs "${CF_APP}" --recent
-  - name: Sauce Labs Tests
-    extension_id: ibm.devops.services.pipeline.saucelabs
+  - name: Test
     type: tester
+    extension_id: ibm.devops.services.pipeline.saucelabs
     target:
       url: ${CF_TARGET_URL}
       organization: ${CF_ORGANIZATION}
       space: ${CF_SPACE}
-    ACCESS: access key here
+    ACCESS: Access Key here
     DL_ASSETS: 'true'
     SELECT_CMD: npm test
-    USER_ID: user ID here
+    USER_ID: Sauce user ID here
     COMMAND: '#!/bin/bash'
-    enable_tests: true
-    test_file_pattern: '*.xml'
