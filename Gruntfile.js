@@ -12,13 +12,7 @@ var gruntConfig = {
             sauce: {
                 options: {
                     timeout: 60000,
-                    reporter: 'mocha-jenkins-reporter',
-                    "reporterOptions": 
-                    {
-                        "junit_report_name": "Tests",
-                        "junit_report_path": "report.xml",
-                        "junit_report_stack": 1
-                    }
+                    reporter: 'spec-xunit-file'
                 },
                 src: ['test/sauce/**/*-specs.js']
             }
